@@ -168,10 +168,10 @@ const CancelamentoObs = () => {
                     )}
                 </Modal.Body>
                 <Modal.Footer>
-                <Button className='botaovoltar' onClick={() => setShowModal(false)}>
+                <Button variant="danger" onClick={() => setShowModal(false)}>
                     Fechar
                 </Button>
-                <Button className='botao-pesquisa' onClick={handleEnviarObs}>
+                <Button variant="success" onClick={handleEnviarObs} disabled={isLoading}>
                     {isLoading ? <Spinner animation="border" size="sm" /> : "Enviar"}
                 </Button>
                 </Modal.Footer>
